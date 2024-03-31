@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Error</title>
-    <link>http://blog.zxbetter.cn/tags/</link>
-    <description>Recent content in Tags on Error</description>
+    <title>Tags on x0zh</title>
+    <link>https://x0zh.github.io/tags/</link>
+    <description>Recent content in Tags on x0zh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>zxbetter</copyright>
-    
-	<atom:link href="http://blog.zxbetter.cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>x0zh</copyright>
+    <atom:link href="https://x0zh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

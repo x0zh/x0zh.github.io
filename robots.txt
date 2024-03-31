@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://blog.zxbetter.cn/sitemap.xml
+Sitemap: https://x0zh.github.io/sitemap.xml
