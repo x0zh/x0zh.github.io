@@ -2,7 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://x0zh.github.io/tags/blog/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/categories/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/even/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/hugo/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/post/2024/site-note/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://x0zh.github.io/post/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/</loc>
     <lastmod>2024-04-03T02:32:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -16,20 +58,22 @@
   </url>
   
   <url>
-    <loc>https://x0zh.github.io/about/</loc>
+    <loc>https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-04-03T02:32:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://x0zh.github.io/categories/</loc>
+    <loc>https://x0zh.github.io/tags/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://x0zh.github.io/tags/</loc>
+    <loc>https://x0zh.github.io/about/</loc>
+    <lastmod>2024-04-03T02:32:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

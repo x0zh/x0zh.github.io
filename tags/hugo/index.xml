@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>x0zh</title>
-    <link>https://x0zh.github.io/</link>
-    <description>Recent content on x0zh</description>
+    <title>Hugo on x0zh</title>
+    <link>https://x0zh.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on x0zh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>x0zh</copyright>
     <lastBuildDate>Wed, 03 Apr 2024 02:32:00 +0800</lastBuildDate>
-    <atom:link href="https://x0zh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://x0zh.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo建站备忘录</title>
       <link>https://x0zh.github.io/post/2024/site-note/</link>
       <pubDate>Tue, 02 Apr 2024 23:53:44 +0800</pubDate>
       <guid>https://x0zh.github.io/post/2024/site-note/</guid>
       <description>我没有记录整个建站的详细过程，因为网上的资料已经很多了。好吧，其实本网站是很久之前搭建的，当时忘记记录了，那就从现在遇到的问题开始吧。 图片使</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://x0zh.github.io/about/</link>
-      <pubDate>Sat, 28 Sep 2019 15:08:56 +0800</pubDate>
-      <guid>https://x0zh.github.io/about/</guid>
-      <description>一个纯粹的技术爱好者。如果我的分享对你有所帮助，我会感到很开心。</description>
     </item>
   </channel>
 </rss>
