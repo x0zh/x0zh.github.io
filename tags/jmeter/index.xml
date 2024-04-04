@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工具 on x0zh</title>
-    <link>https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-    <description>Recent content in 工具 on x0zh</description>
+    <title>Jmeter on x0zh</title>
+    <link>https://x0zh.github.io/tags/jmeter/</link>
+    <description>Recent content in Jmeter on x0zh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>x0zh</copyright>
     <lastBuildDate>Thu, 04 Apr 2024 15:47:30 +0800</lastBuildDate>
-    <atom:link href="https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://x0zh.github.io/tags/jmeter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>用Jmeter替代Postman</title>
       <link>https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/</link>
       <pubDate>Thu, 04 Apr 2024 11:37:26 +0800</pubDate>
       <guid>https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/</guid>
       <description>最近更新了Postman，发现必须登录才能创建Workspace，这样你的数据就会被同步到云端，这我就不能接受了（可能有的人会说你那点数据有</description>
-    </item>
-    <item>
-      <title>Hugo建站备忘录</title>
-      <link>https://x0zh.github.io/post/2024/site-note/</link>
-      <pubDate>Tue, 02 Apr 2024 23:53:44 +0800</pubDate>
-      <guid>https://x0zh.github.io/post/2024/site-note/</guid>
-      <description>我没有记录整个建站的详细过程，是因为网上的资料已经很多了。好吧，其实本网站是很久之前搭建的，当时忘记记录了，那就从现在遇到的问题开始吧。 图片</description>
     </item>
   </channel>
 </rss>

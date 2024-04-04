@@ -2,71 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://x0zh.github.io/tags/blog/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://x0zh.github.io/categories/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://x0zh.github.io/tags/even/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <loc>https://x0zh.github.io/tags/jmeter/</loc>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://x0zh.github.io/tags/hugo/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://x0zh.github.io/post/2024/site-note/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <loc>https://x0zh.github.io/tags/postman/</loc>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://x0zh.github.io/post/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://x0zh.github.io/tags/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://x0zh.github.io/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/</loc>
+    <lastmod>2024-04-04T15:47:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/blog/</loc>
+    <lastmod>2024-04-03T02:54:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/even/</loc>
+    <lastmod>2024-04-03T02:54:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/hugo/</loc>
+    <lastmod>2024-04-03T02:54:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/post/2024/site-note/</loc>
+    <lastmod>2024-04-03T02:54:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://x0zh.github.io/tags/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2024-04-03T02:40:43+08:00</lastmod>
+    <lastmod>2024-04-03T02:54:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

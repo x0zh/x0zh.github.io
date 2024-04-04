@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>用Jmeter替代Postman - x0zh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="x0zh" /><meta name="description" content="Postman的10年老粉，转战Jmeter" /><meta name="keywords" content="Jmeter, Postman" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.124.1 with theme even" />
+
+
+<link rel="canonical" href="https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="用Jmeter替代Postman" />
+<meta property="og:description" content="Postman的10年老粉，转战Jmeter" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-04-04T11:37:26+08:00" />
+<meta property="article:modified_time" content="2024-04-04T15:47:30+08:00" />
+<meta itemprop="name" content="用Jmeter替代Postman">
+<meta itemprop="description" content="Postman的10年老粉，转战Jmeter"><meta itemprop="datePublished" content="2024-04-04T11:37:26+08:00" />
+<meta itemprop="dateModified" content="2024-04-04T15:47:30+08:00" />
+<meta itemprop="wordCount" content="1187">
+<meta itemprop="keywords" content="Jmeter,Postman," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="用Jmeter替代Postman"/>
+<meta name="twitter:description" content="Postman的10年老粉，转战Jmeter"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo"> </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo"> </a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">用Jmeter替代Postman</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-04-04 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
+            </div>
+          <span class="more-meta"> 约 1187 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#组件的启用与禁用">组件的启用与禁用</a></li>
+    <li><a href="#工程结构">工程结构</a>
+      <ul>
+        <li><a href="#环境信息">环境信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#import-from-curl">Import from cURL</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>最近更新了Postman，发现必须登录才能创建Workspace，这样你的数据就会被同步到云端，这我就不能接受了（可能有的人会说你那点数据有什么隐私呀，今天工地没开工，咱不抬杠哈～）。作为Postman的十年老粉（从Postman还是Chrome插件时开始使用），是时候说再见了。</p>
+<p>Jmeter作为一款性能测试工具，功能非常强大，足以满足我们日常接口测试的需求了。说实话Jmeter的用户体验不是很好，但是对于我来说接口测试也不是一个高频的事项，工具够用且可控就行了。</p>
+<p>这里并不是Jmeter的使用教程，我可能也不会按标准的方式去使用每个组件&#x1f602;，我只是从Web后端开发的角度，去分享我日常测试的使用经验。</p>
+<h2 id="组件的启用与禁用">组件的启用与禁用</h2>
+<p><img src="./images/2.png" alt="组件的启用与禁用"></p>
+<p>如上图所示，右键Jmeter的组件就能选择启用或禁用，当一个组件被禁用时，执行测试时就会忽略该组件，这个功能极大的提高的Jmeter的灵活性。</p>
+<blockquote>
+<p>当父组件被禁用时，子组件也会被禁用。</p>
+</blockquote>
+<h2 id="工程结构">工程结构</h2>
+<p><img src="./images/1.png" alt="工程结构"></p>
+<p>我每做一个项目，都会创建一个结构类似上图所示的测试工程，其中：</p>
+<ol>
+<li>是项目的根目录，用于区分不同的项目。在Jmeter这里使用的是测试计划（Test Plan）；</li>
+<li>是项目的环境信息，用于把不同环境具有差异化的内容区分开（如网关地址，端口等），下面再做介绍。在Jmeter这里使用的是用户定义的变量组件（User Defined Variables）；</li>
+<li>是接口的HTTP信息头管理器，用于统一管理所有接口公共的HTTP头信息。在Jmeter这里使用的是HTTP信息头管理器组件（HTTP Header Manager）；</li>
+<li>是模块的目录，用于区分不同的模块，每个模块的接口都放在该模块目录下。在Jmeter这里使用的是线程组组件（Thread Group）；</li>
+<li>是具体的接口，用于定义一个待测试的接口。在Jmeter这里使用的是HTTP请求组件（HTTP Request）；</li>
+<li>是查看接口调用结果的地方。在Jmeter这里使用的是察看结果树组件（View Results Tree）。</li>
+</ol>
+<h3 id="环境信息">环境信息</h3>
+<p>和Postman的环境变量一样，在Jmeter中也可以使用环境变量。你的项目有几套环境，你就可以创建几套环境信息（使用Jmeter的User Defined Variables组件），在环境信息里定义不同的变量，代替不同环境间差异化的内容（如网关地址、端口等），如下图所示：</p>
+<p><img src="./images/3.png" alt="定义变量"></p>
+<p>然后在定义接口时，使用变量来代替具体的值（Jmeter使用 <code>${}</code> 引用变量），如下图所示：</p>
+<p><img src="./images/4.png" alt="定义接口"></p>
+<p>这样结合上面介绍的组件启用与禁用功能，就可以实现不同环境间的切换测试了。</p>
+<h2 id="import-from-curl">Import from cURL</h2>
+<p>当测试人员复现了一个比较复杂的BUG时，可能接口的参数比较多，在Jmeter里手动构建接口比较麻烦，此时就可以通过cURL导入接口到Jmeter，慢慢地回放与调试。具体操作如下：</p>
+<p>首先在浏览器的 <code>开发人员工具</code> 中右键对应的接口，选择 <code>Copy as cURL</code></p>
+<p><img src="./images/5.png" alt="copy as cURL"></p>
+<p>然后在Jmeter中选择 <code>Tools -&gt; Import from cURL</code>，把上面复制的内容填进去，再点击 <code>Create Test Plan</code> 按钮即可。</p>
+<p><img src="./images/6.png" alt="Import from cURL"></p>
+<p><img src="./images/7.png" alt="Create Test Plan"></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">x0zh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2024-04-04
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/reward/wechat.png">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/reward/alipay.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/jmeter/">Jmeter</a>
+          <a href="/tags/postman/">Postman</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/2024/site-note/">
+            <span class="next-text nav-default">Hugo建站备忘录</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="x0zh/x0zh.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/x0zh" class="iconfont icon-github" title="github"></a>
+  <link href="" rel="alternate" type="application/rss+xml" title="x0zh" />
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>x0zh</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
