@@ -48,7 +48,7 @@
 <meta itemprop="name" content="Hugo建站备忘录">
 <meta itemprop="description" content="Hugo建站教程，使用even主题，Hugo建站问题记录"><meta itemprop="datePublished" content="2024-04-02T23:53:44+08:00" />
 <meta itemprop="dateModified" content="2024-04-04T15:54:19+08:00" />
-<meta itemprop="wordCount" content="1346">
+<meta itemprop="wordCount" content="1335">
 <meta itemprop="keywords" content="hugo,建站,even,blog," /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Hugo建站备忘录"/>
 <meta name="twitter:description" content="Hugo建站教程，使用even主题，Hugo建站问题记录"/>
 
@@ -134,7 +134,7 @@
         <div class="post-category">
             <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
             </div>
-          <span class="more-meta"> 约 1346 字 </span>
+          <span class="more-meta"> 约 1335 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -145,9 +145,9 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#图片使用相对路径">图片使用相对路径</a></li>
-    <li><a href="#使用新标签页打开外部链接">使用新标签页打开外部链接</a></li>
-    <li><a href="#使用even主题">使用even主题</a>
+    <li><a href="#图片使用相对路径-1">图片使用相对路径 </a></li>
+    <li><a href="#使用新标签页打开外部链接-4">使用新标签页打开外部链接 </a></li>
+    <li><a href="#使用even主题-2">使用even主题 </a>
       <ul>
         <li><a href="#替换网址图标">替换网址图标</a></li>
         <li><a href="#升级hugo导致报错">升级hugo导致报错</a></li>
@@ -161,7 +161,7 @@
 </div>
     <div class="post-content">
       <p>我没有记录整个建站的详细过程，是因为网上的资料已经很多了。好吧，其实本网站是很久之前搭建的，当时忘记记录了，那就从现在遇到的问题开始吧。</p>
-<h2 id="图片使用相对路径">图片使用相对路径</h2>
+<h2 id="图片使用相对路径-1">图片使用相对路径 <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
 <p>相对于图床的方式，我更喜欢就近维护原则，即把每篇文章的图片、附件等静态资源按照一定的规则就近存放，然后在文章中使用相对路径进行引用。
 这样不仅方便维护也方便迁移，同时也能避免图床带来的不稳定性问题。</p>
 <p>可以有很多方式实现这种相对路径的效果，我认为这种方式最简单且适合我：</p>
@@ -244,7 +244,7 @@
 <blockquote>
 <p>内部超链接也可以使用相对路径。如要引用 <code>post/demo1/index.md</code> 文章时，写成 <code>[demo1](../demo1)</code></p>
 </blockquote>
-<h2 id="使用新标签页打开外部链接">使用新标签页打开外部链接</h2>
+<h2 id="使用新标签页打开外部链接-4">使用新标签页打开外部链接 <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></h2>
 <p>正常按markdown语法写链接，然后通过Hugo的Render hooks实现在新标签页打开外部链接的效果。</p>
 <p>在主题目录下创建文件：</p>
 <div class="highlight"><div class="chroma">
@@ -266,11 +266,10 @@
 </span></span><span class="line"><span class="cl"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&#34;{{ .Destination | safeURL }}&#34;</span><span class="err">{{</span> <span class="err">with</span> <span class="err">.Title}}</span> <span class="na">title=</span><span class="s">&#34;{{ . }}&#34;</span><span class="err">{{</span> <span class="err">end</span> <span class="err">}}{{</span> <span class="err">if</span> <span class="err">strings.HasPrefix</span> <span class="err">.Destination</span> <span class="err">&#34;http&#34;</span> <span class="err">}}</span> <span class="na">target=</span><span class="s">&#34;_blank&#34;</span> <span class="na">style=</span><span class="s">&#34;background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;&#34;</span><span class="err">{{</span> <span class="err">end</span> <span class="err">}}</span><span class="nt">&gt;</span>{{ .Text }}<span class="nt">&lt;/a&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="使用even主题">使用even主题</h2>
-<p>使用方式参考: <a href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">官方文档</a></p>
+</div><h2 id="使用even主题-2">使用even主题 <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></h2>
 <h3 id="替换网址图标">替换网址图标</h3>
 <p>按even的使用文档描述，可以自定义网址图标。</p>
-<p>可以使用 <a href="https://favicon.io/" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">favicon.io</a> 制作网站图标，支持文字、emoji、上传图片等。</p>
+<p>可以使用 favicon.io <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> 制作网站图标，支持文字、emoji、上传图片等。</p>
 <h3 id="升级hugo导致报错">升级hugo导致报错</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -370,12 +369,23 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="参考链接">参考链接</h2>
-<ul>
-<li>[1] <a href="https://github.com/gohugoio/hugo/issues/1240#issuecomment-753077529" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">Images in markdown relative to content</a></li>
-<li>[2] <a href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">hugo-theme-even</a></li>
-<li>[3] <a href="https://favicon.io/" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">favicon.io</a></li>
-<li>[4] <a href="https://gohugo.io/render-hooks/" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">hugo render hooks</a></li>
-</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://github.com/gohugoio/hugo/issues/1240#issuecomment-753077529" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">Images in markdown relative to content</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://gohugo.io/render-hooks/" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">hugo render hooks</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://github.com/olOwOlo/hugo-theme-even" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">hugo-theme-even</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://favicon.io/" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;">favicon.io</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
     </div>
 
@@ -447,7 +457,7 @@
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="https://github.com/x0zh" class="iconfont icon-github" title="github"></a>
+      <a href="https://github.com/x0zh" class="iconfont icon-github" title="github" target="_blank" style="background: url(/images/link-external.svg) center right no-repeat;padding-right: 13px;"></a>
   <link href="" rel="alternate" type="application/rss+xml" title="x0zh" />
 </div>
 
