@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gitee on x0zh</title>
+    <link>https://x0zh.github.io/tags/gitee/</link>
+    <description>Recent content in Gitee on x0zh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>x0zh</copyright>
+    <lastBuildDate>Sat, 27 Apr 2024 21:21:22 +0800</lastBuildDate>
+    <atom:link href="https://x0zh.github.io/tags/gitee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitee 报错 The token username invalid</title>
+      <link>https://x0zh.github.io/post/2024/gitee-the-token-username-invalid/</link>
+      <pubDate>Sat, 27 Apr 2024 20:46:02 +0800</pubDate>
+      <guid>https://x0zh.github.io/post/2024/gitee-the-token-username-invalid/</guid>
+      <description>我本地 push Gitee 的代码时，认证使用的不是登录密码，而是私人令牌（Personal access tokens）。今天 push 代码时报错 remote: [session-xxx] The token username invalid ，如下： 按我的三连招</description>
+    </item>
+  </channel>
+</rss>

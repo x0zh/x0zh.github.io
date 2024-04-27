@@ -3,7 +3,56 @@
   
   <url>
     <loc>https://x0zh.github.io/categories/</loc>
-    <lastmod>2024-04-04T23:05:53+08:00</lastmod>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/git/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/gitee/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/post/2024/gitee-the-token-username-invalid/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/post/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/tags/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2024-04-27T21:21:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -18,34 +67,6 @@
   <url>
     <loc>https://x0zh.github.io/tags/postman/</loc>
     <lastmod>2024-04-04T15:48:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://x0zh.github.io/post/</loc>
-    <lastmod>2024-04-04T23:05:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://x0zh.github.io/tags/</loc>
-    <lastmod>2024-04-04T23:05:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://x0zh.github.io/</loc>
-    <lastmod>2024-04-04T23:05:53+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-04-04T23:05:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

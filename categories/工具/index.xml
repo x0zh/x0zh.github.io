@@ -7,8 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>x0zh</copyright>
-    <lastBuildDate>Thu, 04 Apr 2024 23:05:53 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Apr 2024 21:21:22 +0800</lastBuildDate>
     <atom:link href="https://x0zh.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitee 报错 The token username invalid</title>
+      <link>https://x0zh.github.io/post/2024/gitee-the-token-username-invalid/</link>
+      <pubDate>Sat, 27 Apr 2024 20:46:02 +0800</pubDate>
+      <guid>https://x0zh.github.io/post/2024/gitee-the-token-username-invalid/</guid>
+      <description>我本地 push Gitee 的代码时，认证使用的不是登录密码，而是私人令牌（Personal access tokens）。今天 push 代码时报错 remote: [session-xxx] The token username invalid ，如下： 按我的三连招</description>
+    </item>
     <item>
       <title>用Jmeter替代Postman</title>
       <link>https://x0zh.github.io/post/2024/switch-from-postman-to-jmeter/</link>
